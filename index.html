@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <title>DICES= Have Fun</title>
+</head>
+
+<body>
+    <div class="wrapper clearfix" id="maincontent">
+        <div class="player-0-panel active">
+            <div class="player-name" id="name-0">Player 1</div>
+            <div class="player-score" id="score-0">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">11</div>
+            </div>
+        </div>
+
+        <div class="player-1-panel">
+            <div class="player-name" id="name-1">Player 2</div>
+            <div class="player-score" id="score-1">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <button class="btn-changePlayerName"><i class="ion-ios-person-outline"></i>Change players</button>
+        <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+        <input type="text" placeholder="Final score" class="final-score">
+
+        <img src="images/dice-6.png" alt="Dice" class="dice" id="dice-1">
+        <img src="images/dice-6.png" alt="Dice" class="dice" id="dice-2">
+    </div>
+
+    <div class="wrapper clearfix" id="usernames">
+        <div class="player-0-panel active">
+
+            <input placeholder="Player 1 name" id="name-player-0" type="text" class="name=player-0">
+
+
+        </div>
+
+        <div class="player-1-panel">
+
+            <input placeholder="Player 2 name" id="name-player-1" type="text" class="name=player-1">
+
+
+        </div>
+
+        <button class="btn-play"><i class="ion-ios-play"></i>Play</button>
+        <div class="instruction">
+            <h3>Instructions</h3>
+            <p>Rool dices until you will score 100 points. Keep in mind that in case you will draw '1' then there is a change of player and no points are added. Click 'hold' button to sume up points to the pot.  </p>
+        </div>
+
+    </div>
+
+    <!--<script src="app.js"></script>-->
+    <script src="js/mainApp.js"></script>
+</body>
+
+</html>
